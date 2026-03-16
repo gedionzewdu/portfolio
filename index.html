@@ -1,155 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gedion Zewdu | Founder & Senior Full Stack Developer</title>
-    <style>
-        :root {
-            --bg: #0d1117;
-            --card: #161b22;
-            --accent: #58a6ff;
-            --text-main: #f0f6fc;
-            --text-dim: #8b949e;
-            --border: #30363d;
-        }
 
-        * { box-sizing: border-box; transition: all 0.3s ease; }
-        body {
-            font-family: 'Inter', -apple-system, system-ui, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            margin: 0;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* Hero Section with PNG background */
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.9)), url('Gedi Office Shot.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-            padding: 20px;
-        }
+<title>Gedion Zewdu | Full Stack Developer</title>
 
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid var(--accent);
-            margin-bottom: 20px;
-            object-fit: cover;
-            box-shadow: 0 0 30px rgba(88, 166, 255, 0.2);
-        }
+<meta name="description" content="Gedion Zewdu - Full Stack MERN Developer and Mobile App Developer from Ethiopia. Creator of Gedion Dev programming tutorials.">
 
-        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -2px; }
-        .hero p { font-size: 1.5rem; color: var(--accent); margin: 10px 0; font-weight: 300; }
+<link rel="icon" href="Gedion Dev Official Logo.png">
 
-        .container { max-width: 1000px; margin: -100px auto 100px; padding: 0 20px; }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        /* Experience Cards */
-        .glass-card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
+<style>
 
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-        h2 { font-size: 1.8rem; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-bottom: 25px; }
+body{
+background:#0d0d0d;
+color:white;
+line-height:1.6;
+}
 
-        .job-title { color: var(--accent); font-weight: bold; margin: 0; }
-        .company { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 15px; }
+/* NAVBAR */
 
-        .skill-pill {
-            display: inline-block;
-            background: #21262d;
-            border: 1px solid var(--border);
-            padding: 5px 15px;
-            border-radius: 50px;
-            margin: 5px;
-            font-size: 0.85rem;
-            color: var(--accent);
-        }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111;
+position:sticky;
+top:0;
+z-index:100;
+}
 
-        /* Buttons */
-        .cta-group { margin-top: 40px; }
-        .btn {
-            padding: 15px 35px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px;
-        }
-        .btn-primary { background: var(--accent); color: var(--bg); }
-        .btn-secondary { border: 1px solid var(--accent); color: var(--accent); }
-        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
+nav img{
+width:45px;
+}
 
-        @media (max-width: 768px) {
-            .grid { grid-template-columns: 1fr; }
-            h1 { font-size: 2.5rem; }
-        }
-    </style>
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00d9ff;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#00d9ff;
+}
+
+.hero-text p{
+margin:20px 0;
+color:#ccc;
+}
+
+.hero-text button{
+padding:12px 25px;
+background:#00d9ff;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.hero-img img{
+width:320px;
+border-radius:15px;
+box-shadow:0 0 25px #00d9ff50;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+font-size:40px;
+margin-bottom:30px;
+text-align:center;
+color:#00d9ff;
+}
+
+/* ABOUT */
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+color:#ccc;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.skill{
+background:#151515;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+background:#1e1e1e;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.project-card{
+background:#151515;
+border-radius:10px;
+padding:25px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#00d9ff;
+}
+
+/* SOCIAL */
+
+.social{
+text-align:center;
+margin-top:40px;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#151515;
+border-radius:8px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.social a:hover{
+background:#00d9ff;
+color:black;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:#777;
+margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-img{
+margin-top:30px;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <header class="hero">
-        <img src="Gedion Dev Official Logo.png" alt="Gedion Dev" class="profile-img">
-        <h1>Gedion Zewdu</h1>
-        <p>Founder & CEO of Efeson Technologies</p>
-        <div class="cta-group">
-            <a href="https://www.youtube.com/@gedion_dev" class="btn btn-primary">Watch My Courses</a>
-            <a href="https://www.linkedin.com/in/gedionzewdu" class="btn btn-secondary">Connect on LinkedIn</a>
-        </div>
-    </header>
+<!-- NAVBAR -->
 
-    <main class="container">
-        <div class="glass-card">
-            <section>
-                <h2>Technical Leadership</h2>
-                <p>Senior Full Stack Developer specializing in high-performance digital ecosystems. From founding Efeson Academy to serving as CTO, I bridge the gap between complex engineering and business strategy.</p>
-                
-                <div class="grid">
-                    <div>
-                        <h3>Core Expertise</h3>
-                        <div class="skill-pill">MERN Stack</div>
-                        <div class="skill-pill">React Native</div>
-                        <div class="skill-pill">Swift (iOS)</div>
-                        <div class="skill-pill">Kotlin (Android)</div>
-                        <div class="skill-pill">Cloudflare Architecture</div>
-                        <div class="skill-pill">Geez Language Preservation</div>
-                    </div>
-                    <div>
-                        <h3>Professional Background</h3>
-                        <p class="job-title">Chief Technology Officer</p>
-                        <p class="company">ByteBloom Web Solutions (2022 - 2025)</p>
-                        
-                        <p class="job-title">Full Stack Developer</p>
-                        <p class="company">Ethio Tech Solutions (2020 - 2021)</p>
-                    </div>
-                </div>
-            </section>
+<nav>
 
-            <section style="margin-top: 60px; text-align: center;">
-                <h2>Education</h2>
-                <p style="margin: 0; font-weight: bold;">B.Sc. in Software Engineering</p>
-                <p style="margin: 0; color: var(--text-dim);">Addis Ababa University</p>
-            </section>
-        </div>
-    </main>
+<img src="Gedion Dev Official Logo.png">
 
-    <footer style="text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.8rem;">
-        &copy; 2026 Gedion Dev | Built with Cloudflare & GitHub
-    </footer>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Gedion Zewdu</span></h1>
+
+<p>
+Full Stack MERN Developer and Mobile App Developer from Addis Ababa, Ethiopia.
+I build modern websites, scalable backend systems, and cross-platform mobile applications.
+</p>
+
+<a href="https://www.github.com/gedionzewdu" target="_blank">
+<button>View My Work</button>
+</a>
+
+</div>
+
+<div class="hero-img">
+
+<img src="Gedi Office Shot.png">
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+
+My name is <strong>Gedion Zewdu</strong>, a passionate Full Stack Developer based in Addis Ababa, Ethiopia.
+
+I specialize in building modern web applications using the MERN stack and developing mobile apps using React Native, Swift and Kotlin.
+
+I also run programming education platforms under the name <strong>Gedion Dev</strong> where I teach software development and help developers learn modern technologies.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Express.js</div>
+<div class="skill">MongoDB</div>
+<div class="skill">React Native</div>
+<div class="skill">Swift</div>
+<div class="skill">Kotlin</div>
+<div class="skill">REST APIs</div>
+<div class="skill">Cloudflare</div>
+<div class="skill">Git & Github</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Developer Portfolio</h3>
+<p>Personal developer portfolio website deployed using Cloudflare.</p>
+</div>
+
+<div class="project-card">
+<h3>Mobile Applications</h3>
+<p>Cross-platform mobile apps built with React Native.</p>
+</div>
+
+<div class="project-card">
+<h3>Full Stack Web Apps</h3>
+<p>Scalable MERN stack applications with modern UI and APIs.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Connect With Me</h2>
+
+<div class="social">
+
+<a href="https://www.gedion.is-a.dev" target="_blank">Website</a>
+
+<a href="https://www.github.com/gedionzewdu" target="_blank">Github</a>
+
+<a href="https://www.linkedin.com/in/gedionzewdu" target="_blank">LinkedIn</a>
+
+<a href="https://www.upwork.com/freelancers/~01727bf317f83e15ce?mp_source=share" target="_blank">Upwork</a>
+
+<a href="https://www.youtube.com/@gedion_dev" target="_blank">YouTube</a>
+
+<a href="https://t.me/gedion_dev" target="_blank">Telegram</a>
+
+<a href="https://www.facebook.com/gediondev" target="_blank">Facebook</a>
+
+<a href="https://www.instagram.com/gedion.dev" target="_blank">Instagram</a>
+
+<a href="https://www.tiktok.com/@gediondev" target="_blank">TikTok</a>
+
+<a href="https://www.x.com/gediondev" target="_blank">Twitter</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Gedion Dev | Built by Gedion Zewdu</p>
+
+</footer>
 
 </body>
 </html>
