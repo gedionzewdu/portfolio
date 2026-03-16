@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gedion Dev | Portfolio</title>
+    <title>Gedion Dev | Full Stack & Mobile Specialist</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #0d1117; color: white; text-align: center; padding: 50px; }
-        .container { max-width: 800px; margin: auto; background: #161b22; padding: 40px; border-radius: 15px; border: 1px solid #30363d; }
-        h1 { color: #58a6ff; }
-        p { font-size: 1.2rem; color: #8b949e; }
-        .links a { display: inline-block; margin: 10px; color: #58a6ff; text-decoration: none; border: 1px solid #30363d; padding: 10px 20px; border-radius: 5px; }
-        .links a:hover { background: #30363d; }
+        :root { --blue: #58a6ff; --bg: #0d1117; --card: #161b22; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: white; margin: 0; padding: 0; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Gedi Office Shot.png'); 
+                background-size: cover; background-position: center; padding: 100px 20px; text-align: center; }
+        .logo { width: 120px; border-radius: 50%; border: 4px solid var(--blue); margin-bottom: 20px; }
+        h1 { font-size: 3rem; margin: 10px 0; }
+        .tagline { font-size: 1.5rem; color: var(--blue); margin-bottom: 30px; }
+        .container { max-width: 800px; margin: -50px auto 50px; background: var(--card); padding: 40px; 
+                     border-radius: 20px; border: 1px solid #30363d; text-align: center; }
+        .social-btn { display: inline-block; margin: 10px; padding: 12px 25px; background: transparent; 
+                      color: var(--blue); border: 1px solid var(--blue); text-decoration: none; 
+                      border-radius: 50px; transition: 0.3s; }
+        .social-btn:hover { background: var(--blue); color: white; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="hero">
+        <img src="Gedion Dev Official Logo.png" alt="Gedion Dev Logo" class="logo">
         <h1>Gedion Zewdu</h1>
-        <p>Senior Full Stack Developer & Specialist Mobile App Developer</p>
-        <p>Addis Ababa, Ethiopia</p>
-        <div class="links">
-            <a href="https://www.youtube.com/@gedion_dev">YouTube</a>
-            <a href="https://www.linkedin.com/in/gedionzewdu">LinkedIn</a>
-            <a href="mailto:contact@gedion.is-a.dev">Contact Me</a>
+        <p class="tagline">Full Stack Developer | Founder of Efeson Technologies</p>
+    </div>
+    <div class="container">
+        <h2>Expert Mobile & Web Solutions</h2>
+        <p>Specializing in MERN Stack, React Native, Swift, and Kotlin.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@gedion_dev" class="social-btn">YouTube</a>
+            <a href="https://www.linkedin.com/in/gedionzewdu" class="social-btn">LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~01727bf317f83e15ce" class="social-btn">Upwork</a>
         </div>
-        <p style="margin-top: 30px;">Coming Soon: Massive Programming Courses</p>
+        <p style="margin-top: 40px; color: #8b949e;">Building the future of Ethiopian Tech. Courses coming soon.</p>
     </div>
 </body>
 </html>
