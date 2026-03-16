@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -16,14 +16,23 @@
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Poppins,sans-serif;
 scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
 }
 
 body{
@@ -34,6 +43,15 @@ overflow-x:hidden;
 
 #particles-js{
 position:fixed;
+width:100%;
+height:100%;
+z-index:-2;
+}
+
+#hero3d{
+position:fixed;
+top:0;
+left:0;
 width:100%;
 height:100%;
 z-index:-1;
@@ -48,7 +66,6 @@ background:rgba(0,0,0,0.6);
 backdrop-filter:blur(10px);
 position:sticky;
 top:0;
-z-index:100;
 }
 
 nav img{
@@ -58,13 +75,12 @@ width:45px;
 nav ul{
 display:flex;
 list-style:none;
-gap:35px;
+gap:30px;
 }
 
 nav ul a{
 text-decoration:none;
 color:white;
-font-weight:500;
 transition:.3s;
 }
 
@@ -74,10 +90,16 @@ color:#00e5ff;
 
 .hero{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:100px 8%;
+align-items:center;
+padding:120px 8%;
 flex-wrap:wrap;
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 0 30px rgba(0,229,255,0.4);
 }
 
 .hero-text{
@@ -85,16 +107,11 @@ max-width:600px;
 }
 
 .hero-text h1{
-font-size:60px;
+font-size:55px;
 }
 
 .hero-text span{
 color:#00e5ff;
-}
-
-.hero-text p{
-margin:20px 0;
-color:#ccc;
 }
 
 .buttons{
@@ -102,12 +119,11 @@ margin-top:20px;
 }
 
 .btn{
-padding:12px 25px;
+padding:12px 24px;
 border:none;
 border-radius:6px;
+margin-right:10px;
 cursor:pointer;
-margin-right:15px;
-font-weight:500;
 }
 
 .primary{
@@ -119,94 +135,73 @@ background:#222;
 color:white;
 }
 
-.hero img{
-width:320px;
-border-radius:15px;
-box-shadow:0 0 30px rgba(0,229,255,0.3);
-}
-
 section{
 padding:100px 8%;
 }
 
 section h2{
 text-align:center;
-font-size:40px;
 margin-bottom:50px;
+font-size:38px;
 color:#00e5ff;
-}
-
-.about{
-max-width:900px;
-margin:auto;
-text-align:center;
-color:#ccc;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.skill{
-background:#111;
-padding:20px;
-border-radius:10px;
-}
-
-.skill h3{
-margin-bottom:10px;
-}
-
-.progress{
-height:8px;
-background:#222;
-border-radius:5px;
-overflow:hidden;
-}
-
-.progress div{
-height:100%;
-background:#00e5ff;
 }
 
 .projects{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .project{
 background:#111;
 padding:25px;
-border-radius:12px;
+border-radius:10px;
 transition:.3s;
 }
 
 .project:hover{
 transform:translateY(-6px);
-box-shadow:0 10px 30px rgba(0,229,255,0.2);
 }
 
-.social{
-text-align:center;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.social a{
-display:inline-block;
-margin:10px;
-padding:12px 18px;
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+textarea{
+width:100%;
+height:150px;
 background:#111;
-border-radius:8px;
 color:white;
-text-decoration:none;
-transition:.3s;
+border:none;
+padding:15px;
+border-radius:8px;
 }
 
-.social a:hover{
-background:#00e5ff;
-color:black;
+button{
+cursor:pointer;
+}
+
+pre{
+background:#000;
+padding:20px;
+margin-top:10px;
+}
+
+form input, form textarea{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#111;
+border:none;
+color:white;
+border-radius:6px;
 }
 
 footer{
@@ -214,29 +209,6 @@ text-align:center;
 padding:30px;
 background:#050505;
 color:#777;
-margin-top:60px;
-}
-
-.terminal{
-background:#000;
-padding:20px;
-border-radius:10px;
-font-family:monospace;
-margin-top:40px;
-color:#0f0;
-}
-
-.cursor{
-display:inline-block;
-width:10px;
-background:#0f0;
-animation:blink 1s infinite;
-}
-
-@keyframes blink{
-0%{opacity:0}
-50%{opacity:1}
-100%{opacity:0}
 }
 
 @media(max-width:900px){
@@ -254,11 +226,27 @@ margin-top:40px;
 
 </style>
 
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Gedion Zewdu",
+ "url":"https://portfolio.gedion-zewdu.workers.dev",
+ "jobTitle":"Full Stack Developer",
+ "sameAs":[
+ "https://github.com/gedionzewdu",
+ "https://linkedin.com/in/gedionzewdu",
+ "https://youtube.com/@gedion_dev"
+ ]
+}
+</script>
+
 </head>
 
 <body>
 
 <div id="particles-js"></div>
+<canvas id="hero3d"></canvas>
 
 <nav>
 
@@ -266,9 +254,9 @@ margin-top:40px;
 
 <ul>
 <a href="#">Home</a>
-<a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
 </ul>
 
@@ -278,13 +266,12 @@ margin-top:40px;
 
 <div class="hero-text">
 
-<h1>Hi, I'm <span>Gedion Zewdu</span></h1>
+<h1>Hello I'm <span>Gedion Zewdu</span></h1>
 
 <h3 id="typing"></h3>
 
 <p>
 Full Stack MERN Developer and Mobile App Developer based in Addis Ababa, Ethiopia.
-I build scalable web platforms, modern UI systems and powerful mobile apps.
 </p>
 
 <div class="buttons">
@@ -294,18 +281,8 @@ I build scalable web platforms, modern UI systems and powerful mobile apps.
 </a>
 
 <a href="https://github.com/gedionzewdu" target="_blank">
-<button class="btn secondary">View Github</button>
+<button class="btn secondary">GitHub</button>
 </a>
-
-</div>
-
-<div class="terminal">
-
-> npm start<br>
-Starting developer portfolio...<br>
-Loading skills...<br>
-Loading projects...<br>
-Server running successfully<span class="cursor"></span>
 
 </div>
 
@@ -315,101 +292,61 @@ Server running successfully<span class="cursor"></span>
 
 </div>
 
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="about">
-
-<p>
-
-My name is <b>Gedion Zewdu</b>, a passionate software developer from Addis Ababa, Ethiopia.
-
-I specialize in building full stack applications using the MERN stack and developing modern mobile applications using React Native, Swift and Kotlin.
-
-I also run programming education platforms under the name <b>Gedion Dev</b> where I teach thousands of developers how to build real world software systems.
-
-</p>
-
-</div>
-
-</section>
-
 <section id="skills">
 
-<h2>Skills</h2>
+<h2>Technical Skills</h2>
 
-<div class="skills">
-
-<div class="skill">
-<h3>JavaScript</h3>
-<div class="progress"><div style="width:95%"></div></div>
-</div>
-
-<div class="skill">
-<h3>React</h3>
-<div class="progress"><div style="width:92%"></div></div>
-</div>
-
-<div class="skill">
-<h3>Node.js</h3>
-<div class="progress"><div style="width:90%"></div></div>
-</div>
-
-<div class="skill">
-<h3>MongoDB</h3>
-<div class="progress"><div style="width:88%"></div></div>
-</div>
-
-<div class="skill">
-<h3>React Native</h3>
-<div class="progress"><div style="width:90%"></div></div>
-</div>
-
-<div class="skill">
-<h3>Swift / Kotlin</h3>
-<div class="progress"><div style="width:80%"></div></div>
-</div>
-
-</div>
+<canvas id="skillsChart"></canvas>
 
 </section>
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2>GitHub Projects</h2>
 
-<div class="projects">
+<div id="github-projects" class="projects"></div>
 
-<div class="project">
+</section>
 
-<h3>Developer Portfolio</h3>
+<section>
 
-<p>
-A modern developer portfolio hosted on Cloudflare Workers with GitHub integration.
-</p>
+<h2>GitHub Activity</h2>
 
-</div>
+<div class="calendar"></div>
 
-<div class="project">
+</section>
 
-<h3>MERN Stack Applications</h3>
+<section id="playground">
 
-<p>
-Full stack web applications with scalable APIs, authentication and modern UI.
-</p>
+<h2>JavaScript Playground</h2>
 
-</div>
+<textarea id="codeInput">
+console.log("Hello from Gedion Dev");
+</textarea>
 
-<div class="project">
+<button onclick="runCode()">Run Code</button>
 
-<h3>Mobile Applications</h3>
+<pre id="output"></pre>
 
-<p>
-Cross platform mobile apps using React Native and native technologies.
-</p>
+</section>
 
-</div>
+<section id="blog">
+
+<h2>Latest Blog Posts</h2>
+
+<div id="blogPosts"></div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Project Gallery</h2>
+
+<div class="gallery">
+
+<img src="project1.png">
+<img src="project2.png">
+<img src="project3.png">
 
 </div>
 
@@ -417,21 +354,18 @@ Cross platform mobile apps using React Native and native technologies.
 
 <section id="contact">
 
-<h2>Connect With Me</h2>
+<h2>Contact Me</h2>
 
-<div class="social">
+<form id="contactForm">
 
-<a href="https://www.gedion.is-a.dev">Website</a>
-<a href="https://github.com/gedionzewdu">Github</a>
-<a href="https://www.linkedin.com/in/gedionzewdu">LinkedIn</a>
-<a href="https://www.youtube.com/@gedion_dev">YouTube</a>
-<a href="https://t.me/gedion_dev">Telegram</a>
-<a href="https://www.facebook.com/gediondev">Facebook</a>
-<a href="https://www.instagram.com/gedion.dev">Instagram</a>
-<a href="https://www.tiktok.com/@gediondev">TikTok</a>
-<a href="https://www.x.com/gediondev">Twitter</a>
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
 
-</div>
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </section>
 
@@ -443,49 +377,180 @@ Cross platform mobile apps using React Native and native technologies.
 
 <script>
 
-const text = [
+/* typing animation */
+
+const texts=[
 "Full Stack MERN Developer",
 "React Native Mobile Developer",
-"Swift & Kotlin App Developer",
+"Swift & Kotlin Developer",
 "Programming Educator - Gedion Dev"
 ]
 
 let count=0
 let index=0
-let currentText=''
-let letter=''
 
 function type(){
 
-if(count===text.length){
+let current=texts[count]
+let letter=current.slice(0,++index)
+
+document.getElementById("typing").textContent=letter
+
+if(letter.length===current.length){
+
+count++
+index=0
+
+if(count===texts.length){
 count=0
 }
 
-currentText=text[count]
-letter=currentText.slice(0,++index)
-
-document.getElementById('typing').textContent=letter
-
-if(letter.length===currentText.length){
-count++
-index=0
 setTimeout(type,1500)
+
 }else{
+
 setTimeout(type,70)
+
 }
 
 }
 
 type()
 
-particlesJS("particles-js",{
+/* GitHub projects */
 
-particles:{
-number:{value:80},
-size:{value:3},
-move:{speed:2},
-line_linked:{enable:true}
+async function loadRepos(){
+
+const res=await fetch("https://api.github.com/users/gedionzewdu/repos")
+const repos=await res.json()
+
+const container=document.getElementById("github-projects")
+
+repos.slice(0,6).forEach(repo=>{
+
+const card=document.createElement("div")
+
+card.className="project"
+
+card.innerHTML=`
+<h3>${repo.name}</h3>
+<p>${repo.description || "No description"}</p>
+<a href="${repo.html_url}" target="_blank">View Project</a>
+`
+
+container.appendChild(card)
+
+})
+
 }
+
+loadRepos()
+
+/* skill chart */
+
+new Chart(document.getElementById('skillsChart'),{
+type:'radar',
+data:{
+labels:['JavaScript','React','Node','MongoDB','React Native','Swift','Kotlin'],
+datasets:[{
+label:'Skill Level',
+data:[95,92,90,88,90,80,80]
+}]
+}
+})
+
+/* GitHub graph */
+
+GitHubCalendar(".calendar","gedionzewdu")
+
+/* playground */
+
+function runCode(){
+
+try{
+
+let result=eval(document.getElementById("codeInput").value)
+document.getElementById("output").textContent=result
+
+}catch(err){
+
+document.getElementById("output").textContent=err
+
+}
+
+}
+
+/* blog loader */
+
+async function loadBlog(){
+
+const res=await fetch("https://api.github.com/repos/gedionzewdu/portfolio/contents/blog")
+
+const posts=await res.json()
+
+const container=document.getElementById("blogPosts")
+
+posts.forEach(post=>{
+
+let div=document.createElement("div")
+
+div.innerHTML=`<a href="${post.html_url}" target="_blank">${post.name}</a>`
+
+container.appendChild(div)
+
+})
+
+}
+
+loadBlog()
+
+/* particles */
+
+particlesJS("particles-js",{particles:{number:{value:80},size:{value:3},move:{speed:2}}})
+
+/* three.js */
+
+const scene=new THREE.Scene()
+
+const camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
+
+const renderer=new THREE.WebGLRenderer({canvas:document.getElementById("hero3d"),alpha:true})
+
+renderer.setSize(window.innerWidth,window.innerHeight)
+
+const geometry=new THREE.TorusKnotGeometry(10,3,100,16)
+
+const material=new THREE.MeshBasicMaterial({wireframe:true})
+
+const mesh=new THREE.Mesh(geometry,material)
+
+scene.add(mesh)
+
+camera.position.z=30
+
+function animate(){
+
+requestAnimationFrame(animate)
+
+mesh.rotation.x+=0.01
+mesh.rotation.y+=0.01
+
+renderer.render(scene,camera)
+
+}
+
+animate()
+
+/* emailjs */
+
+emailjs.init("YOUR_PUBLIC_KEY")
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault()
+
+emailjs.sendForm("service_id","template_id",this)
+.then(()=>alert("Message Sent"))
 
 })
 
