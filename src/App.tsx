@@ -126,7 +126,7 @@ const Hero = () => (
 );
 
 const About = () => (
-  <section id="about" className="py-20 px-6">
+  <section id="about" className="py-20 px-6 scroll-mt-20">
     <div className="max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-3 gap-12">
         <motion.div 
@@ -196,7 +196,7 @@ const About = () => (
 );
 
 const Experience = () => (
-  <section id="experience" className="py-20 px-6 bg-white/[0.02]">
+  <section id="experience" className="py-20 px-6 bg-white/[0.02] scroll-mt-20">
     <div className="max-w-7xl mx-auto">
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
@@ -243,7 +243,7 @@ const Experience = () => (
 );
 
 const Projects = () => (
-  <section id="projects" className="py-20 px-6">
+  <section id="projects" className="py-20 px-6 scroll-mt-20">
     <div className="max-w-7xl mx-auto">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -347,7 +347,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 relative">
+    <section id="contact" className="py-20 px-6 relative scroll-mt-20">
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="max-w-7xl mx-auto">
         <motion.div 
