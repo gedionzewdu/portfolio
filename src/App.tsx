@@ -33,7 +33,7 @@ const Navbar = () => (
         <img 
           src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official%20Logo.png" 
           alt="Gedion Dev Logo" 
-          className="w-10 h-10 object-contain"
+          className="w-10 h-10 object-contain rounded-lg"
           referrerPolicy="no-referrer"
         />
         <span className="font-mono font-bold text-xl tracking-tighter">Gedion Dev</span>
@@ -435,7 +435,7 @@ const Footer = () => (
         <img 
           src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official%20Logo.png" 
           alt="Gedion Dev Logo" 
-          className="w-8 h-8 object-contain"
+          className="w-8 h-8 object-contain rounded-md"
           referrerPolicy="no-referrer"
         />
         <span className="font-mono font-bold tracking-tighter">Gedion Dev</span>
