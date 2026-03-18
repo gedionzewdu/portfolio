@@ -37,12 +37,8 @@ This is my professional portfolio and AI-integrated web platform. It showcases m
 - **Backend/Infrastructure:** Cloudflare Pages, Node.js, Vercel
 - **Tools:** Lucide Icons, SweetAlert2, Git
 
-## 💻 Local Development
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/gedionzewdu/portfolio.git](https://github.com/gedionzewdu/portfolio.git)
 <div align="center">
+  <a href="https://gedion.is-a.dev">gedion.is-a.dev</a>
+  <br></br>
   <p>Copyright © 2026 Gedion Zewdu</p>
-  <a href="https://gedion.is-a.dev">gedion.is-a.dev</a> | <a href="mailto:contact@gedion.is-a.dev">contact@gedion.is-a.dev</a>
 </div>
