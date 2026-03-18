@@ -39,6 +39,7 @@ const Navbar = () => (
         <span className="font-mono font-bold text-xl tracking-tighter">Gedion Dev</span>
       </div>
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
+        <a href="#home" className="hover:text-emerald-400 transition-colors">Home</a>
         <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
         <a href="#experience" className="hover:text-emerald-400 transition-colors">Experience</a>
         <a href="#projects" className="hover:text-emerald-400 transition-colors">Projects</a>
@@ -49,7 +50,7 @@ const Navbar = () => (
 );
 
 const Hero = () => (
-  <section className="pt-40 pb-20 px-6 relative overflow-hidden">
+  <section id="home" className="pt-40 pb-20 px-6 relative overflow-hidden scroll-mt-20">
     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-emerald-500/10 blur-[120px] rounded-full -z-10" />
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
       <motion.div 
