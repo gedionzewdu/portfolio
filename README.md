@@ -1,5 +1,16 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official.png" width="120" height="120" alt="Gedion Dev Logo" />
+  <img 
+    src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official.png"
+    alt="Gedion Dev Logo"
+    width="120"
+    height="120"
+    style="
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+
   <h1>Gedion Zewdu</h1>
   <p>Full Stack Developer & Mobile App Specialist</p>
   
@@ -18,12 +29,12 @@ This is my professional portfolio and AI-integrated web platform. It showcases m
 
 ### Key Features:
 - **Responsive Portfolio:** Highlighting featured projects and professional experiences.
-- **AI Integration:** Seamlessly connected with Google Gemini via Cloudflare Workers.
-- **Contact System:** Integrated with EmailJS for direct inquiries.
+- **AI Integration:** Seamlessly connected with Google Gemini via Cloudflare Pages and Workers.
+- **Contact System:** Integrated with EmailJS for direct inquiries at **contact@gedion.is-a.dev**.
 
 ## 🛠️ Technical Stack
 - **Frontend:** React (TypeScript), Tailwind CSS, Framer Motion
-- **Backend/Infrastructure:** Cloudflare Workers, Node.js
+- **Backend/Infrastructure:** Cloudflare Pages, Node.js, Vercel
 - **Tools:** Lucide Icons, SweetAlert2, Git
 
 ## 💻 Local Development
@@ -31,3 +42,7 @@ This is my professional portfolio and AI-integrated web platform. It showcases m
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/gedionzewdu/portfolio.git](https://github.com/gedionzewdu/portfolio.git)
+<div align="center">
+  <p>Copyright © 2026 Gedion Zewdu</p>
+  <a href="https://gedion.is-a.dev">gedion.is-a.dev</a> | <a href="mailto:contact@gedion.is-a.dev">contact@gedion.is-a.dev</a>
+</div>
