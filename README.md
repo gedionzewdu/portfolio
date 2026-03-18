@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official%20Logo.png" width="120" height="120" alt="Gedion Dev Logo" />
+  <img src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official.png" width="120" height="120" alt="Gedion Dev Logo" />
   <h1>Gedion Zewdu</h1>
   <p>Full Stack Developer & Mobile App Specialist</p>
   
