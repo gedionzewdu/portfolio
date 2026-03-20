@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { PROJECTS, EXPERIENCES, SOCIALS } from "./constants";
 
+// Initialize EmailJS
 emailjs.init('7MuJJ8-sp_NphQIbI');
 
 const Navbar = () => (
@@ -102,7 +103,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.2 }}
         className="relative w-full max-w-md mx-auto lg:max-w-none"
       >
-        <div className="aspect-[848/1264] rounded-[2rem] overflow-hidden border border-white/10 relative group bg-white/5">
+        <div className="aspect-[1080/1350] rounded-[2rem] overflow-hidden border border-white/10 relative group bg-white/5">
           <img 
             src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Gedi%20Office%20Shot.png" 
             alt="Gedion Zewdu" 
