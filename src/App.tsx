@@ -28,7 +28,7 @@ emailjs.init('7MuJJ8-sp_NphQIbI');
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/5">
     <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div className="flex items-center gap-3">
+      <a href="https://gedion.is-a.dev" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <img 
           src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official%20Logo.png" 
           alt="Gedion Dev Logo" 
@@ -36,7 +36,7 @@ const Navbar = () => (
           referrerPolicy="no-referrer"
         />
         <span className="font-mono font-bold text-xl tracking-tighter">Gedion Dev</span>
-      </div>
+      </a>
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
         <a href="#home" className="hover:text-emerald-400 transition-colors">Home</a>
         <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
@@ -431,7 +431,7 @@ const Contact = () => {
 const Footer = () => (
   <footer className="py-12 px-6 border-t border-white/5">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-      <div className="flex items-center gap-3">
+      <a href="https://gedion.is-a.dev" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <img 
           src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official%20Logo.png" 
           alt="Gedion Dev Logo" 
@@ -439,7 +439,7 @@ const Footer = () => (
           referrerPolicy="no-referrer"
         />
         <span className="font-mono font-bold tracking-tighter">Gedion Dev</span>
-      </div>
+      </a>
       <div className="text-white/40 text-sm">
         © {new Date().getFullYear()} Gedion Zewdu. All rights reserved.
       </div>
