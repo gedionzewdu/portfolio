@@ -31,7 +31,7 @@ const Navbar = () => (
     <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <img 
-          src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official%20Logo.png" 
+          src="./branding/Gedion Dev Official Logo.png" 
           alt="Gedion Dev Logo" 
           className="w-10 h-10 object-contain rounded-full"
           referrerPolicy="no-referrer"
@@ -73,7 +73,7 @@ const Hero = () => (
         </p>
         <div className="flex flex-wrap gap-4">
           <a 
-            href="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Zewdu%20Full-Stack%20Developer%20Resume.pdf" 
+            href="./docs/Gedion Zewdu Full-Stack Developer Resume.pdf" 
             target="_blank"
             className="flex items-center gap-2 px-8 py-4 bg-white text-[#0a0a0a] rounded-2xl font-semibold hover:bg-emerald-400 transition-all group"
           >
@@ -105,7 +105,7 @@ const Hero = () => (
       >
         <div className="aspect-[848/1264] rounded-[2rem] overflow-hidden border border-white/10 relative group bg-white/5">
           <img 
-            src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedi%20Office%20Shot.png" 
+            src="./assets/Gedi Office Shot.png" 
             alt="Gedion Zewdu" 
             className="w-full h-full object-cover object-top transition-all duration-700"
             referrerPolicy="no-referrer"
@@ -434,7 +434,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
       <div className="flex items-center gap-3">
         <img 
-          src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official%20Logo.png" 
+          src="./branding/Gedion Dev Official Logo.png" 
           alt="Gedion Dev Logo" 
           className="w-8 h-8 object-contain rounded-full"
           referrerPolicy="no-referrer"

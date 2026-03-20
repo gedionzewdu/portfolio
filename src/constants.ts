@@ -16,55 +16,55 @@ export const PROJECTS: Project[] = [
   {
     title: "Cross-Platform Mobile Banking App Development",
     category: "Mobile App",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Mobile%20Banking%20App.png",
+    image: "./assets/Mobile Banking App.png",
     description: "A secure and feature-rich mobile banking solution built for cross-platform performance."
   },
   {
     title: "Furniture Website End-to-End Development",
     category: "Web Development",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Furniture%20Website.png",
+    image: "./assets/Furniture Website.png",
     description: "Modern furniture showcase website with premium design and smooth user experience."
   },
   {
     title: "Cross-Platform Fitness App Development",
     category: "Mobile App",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Fitness%20App.png",
+    image: "./assets/Fitness App.png",
     description: "Comprehensive fitness tracking application with personalized workout plans."
   },
   {
     title: "Business Landing Page Design & Development",
     category: "Web Development",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Business%20Landing%20Page.png",
+    image: "./assets/Business Landing Page.png",
     description: "High-converting landing page designed to boost business growth and online presence."
   },
   {
     title: "Cross-Platform Mobile Cake Shop App Development",
     category: "Mobile App",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Mobile%20Cake%20Shop%20App.png",
+    image: "./assets/Mobile Cake Shop App.png",
     description: "Delightful mobile shopping experience for a boutique cake shop."
   },
   {
     title: "Project Management Dashboard End-to-End Development",
     category: "Web Development",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Project%20Management%20Dashboard.png",
+    image: "./assets/Project Management Dashboard.png",
     description: "Advanced dashboard for tracking projects, tasks, and team productivity."
   },
   {
     title: "Top-Rated Movies Android App Development",
     category: "Android App",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Top-Rated%20Movies%20App.png",
+    image: "./assets/Top-Rated Movies App.png",
     description: "Native Android application for browsing and discovering top-rated cinema."
   },
   {
     title: "Furniture E-Commerce Website Design & Development",
     category: "Web Development",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Furniture%20E-Commerce%20Website.png",
+    image: "./assets/Furniture E-Commerce Website.png",
     description: "Full-scale e-commerce platform for furniture retail with integrated shopping features."
   },
   {
     title: "iOS Movie-Browsing App Development",
     category: "iOS App",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Movie-Browsing%20App.png",
+    image: "./assets/Movie-Browsing App.png",
     description: "Sleek iOS application for movie enthusiasts to browse and save their favorites."
   }
 ];
