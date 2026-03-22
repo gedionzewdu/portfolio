@@ -1,6 +1,6 @@
 <div align="center">
   <img 
-    src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/Gedion%20Dev%20Official.png"
+    src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official%20Logo.png"
     alt="Gedion Dev Logo"
     width="120"
     height="120"
