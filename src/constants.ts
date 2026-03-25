@@ -104,13 +104,13 @@ export const CERTIFICATIONS: Certification[] = [
     title: "Certificate of Achievement",
     issuer: "Gebeya",
     image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Full-Stack%20Development%20Certificate%20of%20Achievement%20from%20Gebeya%20-%20Gedion%20Zewdu.jpg",
-    description: "Honored to receive a Certificate of Achievement in Full-Stack Development from Gebeya. Excited for the journey ahead!"
+    description: "Proud to be certified in Full Stack Development by Gebeya. I’m excited to bring these sharpened skills to my next professional challenge."
   },
   {
     title: "Certificate of Appreciation",
     issuer: "OAK'S LAB",
     image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Certificate%20of%20Appreciation%20From%20OAK'S%20LAB%20-%20Gedion%20Zewdu.png",
-    description: "Grateful to receive this Certificate of Recognition for my dedication and hard work at OAK'S LAB. Looking forward to continuing to contribute and grow!"
+    description: "Grateful to have received this Certificate of Appreciation for my time at OAK'S LAB. It was a privilege to contribute to such a great team."
   }
 ];
 
