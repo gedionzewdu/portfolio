@@ -102,7 +102,7 @@ export const CERTIFICATIONS: Certification[] = [
   {
     title: "Full-Stack Development Certificate of Achievement",
     issuer: "Gebeya",
-    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Full-Stack%20Development%20Certificate%20of%20Achievement%20from%20Gebeya%20-%20Gedion%20Zewdu.png"
+    image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Full-Stack%20Development%20Certificate%20of%20Achievement%20from%20Gebeya%20-%20Gedion%20Zewdu.jpg"
   },
   {
     title: "Certificate of Appreciation",
