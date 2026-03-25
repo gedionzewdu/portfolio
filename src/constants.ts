@@ -101,7 +101,7 @@ export const EXPERIENCES: Experience[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "Full-Stack Development Certificate of Achievement",
+    title: "Certificate of Achievement",
     issuer: "Gebeya",
     image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Full-Stack%20Development%20Certificate%20of%20Achievement%20from%20Gebeya%20-%20Gedion%20Zewdu.jpg",
     description: "Honored to receive a Certificate of Achievement in Full-Stack Development from Gebeya. Excited for the journey ahead!"
