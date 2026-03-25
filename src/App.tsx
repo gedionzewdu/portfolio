@@ -21,7 +21,7 @@ import {
   Send,
   Briefcase
 } from "lucide-react";
-import { PROJECTS, EXPERIENCES, SOCIALS } from "./constants";
+import { PROJECTS, EXPERIENCES, SOCIALS, CERTIFICATIONS } from "./constants";
 
 // Initialize EmailJS
 emailjs.init('7MuJJ8-sp_NphQIbI');
@@ -41,6 +41,7 @@ const Navbar = () => (
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
         <a href="#home" className="hover:text-emerald-400 transition-colors">Home</a>
         <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
+        <a href="#certifications" className="hover:text-emerald-400 transition-colors">Certifications</a>
         <a href="#experience" className="hover:text-emerald-400 transition-colors">Experience</a>
         <a href="#projects" className="hover:text-emerald-400 transition-colors">Projects</a>
         <a href="#contact" className="px-5 py-2 bg-emerald-500 text-[#0a0a0a] rounded-full hover:bg-emerald-400 transition-colors">Hire Me</a>
@@ -103,7 +104,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.2 }}
         className="relative w-full max-w-md mx-auto lg:max-w-none"
       >
-        <div className="aspect-[928/1142] rounded-[2rem] overflow-hidden border border-white/10 relative group bg-white/5">
+        <div className="aspect-[1080/1350] rounded-[2rem] overflow-hidden border border-white/10 relative group bg-white/5">
           <img 
             src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Gedi%20Office%20Shot.png" 
             alt="Gedion Zewdu" 
@@ -173,8 +174,9 @@ const About = () => (
           <div className="space-y-6">
             <div>
               <div className="text-emerald-400 font-mono text-sm mb-1">2016 - 2020</div>
-              <div className="font-bold">Bachelor of Software Engineering</div>
-              <div className="text-white/60 text-sm">Addis Ababa University</div>
+              <div className="font-bold">Software Engineering</div>
+              <div className="text-white/80 text-sm">Massachusetts Institute of Technology</div>
+              <div className="text-white/60 text-xs italic">MITx Online Curriculum</div>
             </div>
             <div className="pt-6 border-t border-white/5">
               <h3 className="text-xl font-bold mb-4">Languages</h3>
@@ -191,6 +193,44 @@ const About = () => (
             </div>
           </div>
         </motion.div>
+      </div>
+    </div>
+  </section>
+);
+
+const Certifications = () => (
+  <section id="certifications" className="py-20 px-6 scroll-mt-20">
+    <div className="max-w-7xl mx-auto">
+      <motion.h2 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-4xl font-display font-bold mb-12 text-center"
+      >
+        Certifications
+      </motion.h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        {CERTIFICATIONS.map((cert, index) => (
+          <motion.div 
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="glass-card p-6 group"
+          >
+            <div className="relative aspect-[3508/2481] rounded-xl overflow-hidden border border-white/10 mb-6 bg-white/5">
+              <img 
+                src={cert.image} 
+                alt={cert.title} 
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2">{cert.issuer}</div>
+            <h3 className="text-xl font-bold group-hover:text-emerald-400 transition-colors">{cert.title}</h3>
+          </motion.div>
+        ))}
       </div>
     </div>
   </section>
@@ -470,6 +510,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Certifications />
         <Experience />
         <Projects />
         <Contact />
