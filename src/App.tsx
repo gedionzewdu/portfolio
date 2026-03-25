@@ -228,7 +228,8 @@ const Certifications = () => (
               />
             </div>
             <div className="text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2">{cert.issuer}</div>
-            <h3 className="text-xl font-bold group-hover:text-emerald-400 transition-colors">{cert.title}</h3>
+            <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">{cert.title}</h3>
+            <p className="text-sm text-white/60 leading-relaxed">{cert.description}</p>
           </motion.div>
         ))}
       </div>
