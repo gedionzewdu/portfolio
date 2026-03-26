@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     role: "Chief Technology Officer",
-    company: "ByteBloom Web Solutions",
+    company: "Byte Bloom Solutions",
     period: "January 2022 - 2025",
     description: [
       "Oversaw all aspects of business strategy, project development, and client relations.",
