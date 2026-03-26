@@ -21,7 +21,7 @@ import {
   Send,
   Briefcase
 } from "lucide-react";
-import { PROJECTS, EXPERIENCES, SOCIALS, CERTIFICATIONS } from "./constants";
+import { PROJECTS, EXPERIENCES, SOCIALS, CERTIFICATIONS, TECH_STACK } from "./constants";
 
 // Initialize EmailJS
 emailjs.init('7MuJJ8-sp_NphQIbI');
@@ -140,7 +140,7 @@ const About = () => (
         >
           <h2 className="text-4xl font-display font-bold mb-8">About Me</h2>
           <p className="text-xl text-white/60 leading-relaxed mb-8">
-            Senior Full Stack Developer with deep expertise in React, Node.js, Express, and MongoDB, leading the architecture of secure, scalable web platforms for global users. Proven experience in API design and development, CI/CD strategy, and Agile leadership, with a strong focus on performance and reliability.
+            Senior Full Stack Developer specializing in MERN, AI integration, and LLM implementation to architect scalable web platforms and APIs. Complementing this expertise, I am a Specialist Mobile App Engineer expert in React Native, Swift, and Kotlin, utilizing Agile and CI/CD to deliver secure, high-performance solutions.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -196,6 +196,29 @@ const About = () => (
       </div>
     </div>
   </section>
+);
+
+const TechMarquee = () => (
+  <div className="py-12 bg-white/[0.02] border-y border-white/5 overflow-hidden">
+    <div className="flex whitespace-nowrap animate-marquee items-center">
+      {[...TECH_STACK, ...TECH_STACK].map((tech, index) => (
+        <div 
+          key={index} 
+          className="mx-12 flex items-center gap-4 group/tech"
+        >
+          <img 
+            src={tech.logo} 
+            alt={tech.name} 
+            className="w-12 h-12 md:w-16 md:h-16 object-contain grayscale opacity-40 group-hover/tech:grayscale-0 group-hover/tech:opacity-100 transition-all duration-500"
+            referrerPolicy="no-referrer"
+          />
+          <span className="text-xl md:text-2xl font-mono font-bold text-white/20 group-hover/tech:text-emerald-400 transition-colors duration-500">
+            {tech.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
 );
 
 const Certifications = () => (
@@ -529,6 +552,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <TechMarquee />
         <Certifications />
         <Experience />
         <Projects />

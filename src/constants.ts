@@ -84,7 +84,7 @@ export const EXPERIENCES: Experience[] = [
     description: [
       "Oversaw all aspects of business strategy, project development, and client relations.",
       "Managed a team to ensure efficient, scalable, and high-quality digital services.",
-      "Led the development and execution of key projects, ensuring impactful digital solutions."
+      "Led development and execution of key projects, driving 25% revenue growth and higher client satisfaction."
     ]
   },
   {
@@ -112,6 +112,25 @@ export const CERTIFICATIONS: Certification[] = [
     image: "https://raw.githubusercontent.com/gedionzewdu/portfolio/main/assets/Certificate%20of%20Appreciation%20From%20OAK'S%20LAB%20-%20Gedion%20Zewdu.png",
     description: "Grateful to have received this Certificate of Appreciation for my time at OAK'S LAB. It was a privilege to contribute to such a great team."
   }
+];
+
+export const TECH_STACK = [
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "React Native", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }, // React Native often uses React logo
+  { name: "Swift", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
+  { name: "Kotlin", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
+  { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Redux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  { name: "Tailwind CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: "GraphQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" }
 ];
 
 export const SOCIALS = [
