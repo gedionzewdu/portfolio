@@ -205,10 +205,19 @@ const Certifications = () => (
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-4xl font-display font-bold mb-12 text-center"
+        className="text-4xl font-display font-bold mb-4 text-center"
       >
         Certifications
       </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1 }}
+        className="text-white/60 text-center max-w-2xl mx-auto mb-12"
+      >
+        A collection of industry-recognized credentials and honors, validating my mastery of full-stack development and commitment to excellence.
+      </motion.p>
       <div className="grid md:grid-cols-2 gap-8">
         {CERTIFICATIONS.map((cert, index) => (
           <motion.div 
@@ -244,10 +253,19 @@ const Experience = () => (
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-4xl font-display font-bold mb-12 text-center"
+        className="text-4xl font-display font-bold mb-4 text-center"
       >
         Professional Experience
       </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1 }}
+        className="text-white/60 text-center max-w-2xl mx-auto mb-12"
+      >
+        A timeline of my leadership and technical roles, demonstrating a track record of building scalable systems and leading high-impact teams.
+      </motion.p>
       <div className="space-y-8">
         {EXPERIENCES.map((exp, index) => (
           <motion.div 
