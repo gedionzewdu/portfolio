@@ -80,7 +80,7 @@ export const EXPERIENCES: Experience[] = [
   {
     role: "Chief Technology Officer",
     company: "Byte Bloom Solutions",
-    period: "January 2022 - 2025",
+    period: "January 2022 - August 2025",
     description: [
       "Oversaw all aspects of business strategy, project development, and client relations.",
       "Managed a team to ensure efficient, scalable, and high-quality digital services.",
