@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-[#0a0a0a] text-white selection:bg-emerald-500/30 selection:text-emerald-400;
+    @apply bg-[#0a0a0a] text-white selection:bg-cyan-500/30 selection:text-cyan-400;
   }
 }
 
@@ -21,7 +21,7 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500;
 }
 
 @keyframes marquee {
