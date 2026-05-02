@@ -410,7 +410,7 @@ const Contact = () => {
         icon: 'success',
         background: '#1a1a1a',
         color: '#fff',
-        confirmButtonColor: '#10b981'
+        confirmButtonColor: '#06b6d4'
       });
       
       form.current.reset();
@@ -422,7 +422,7 @@ const Contact = () => {
         icon: 'error',
         background: '#1a1a1a',
         color: '#fff',
-        confirmButtonColor: '#ef4444'
+        confirmButtonColor: '#d946ef'
       });
     } finally {
       setIsSending(false);
