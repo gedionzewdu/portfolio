@@ -408,6 +408,7 @@ const Contact = () => {
         title: 'Message Sent!',
         text: 'Thanks for reaching out. I usually reply within 24 hours.',
         icon: 'success',
+        iconColor: '#06b6d4',
         background: '#1a1a1a',
         color: '#fff',
         confirmButtonColor: '#06b6d4'
@@ -420,6 +421,7 @@ const Contact = () => {
         title: 'Error!',
         text: error?.text || 'Failed to send message. Please try again later.',
         icon: 'error',
+        iconColor: '#d946ef',
         background: '#1a1a1a',
         color: '#fff',
         confirmButtonColor: '#d946ef'
