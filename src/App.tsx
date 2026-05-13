@@ -19,7 +19,13 @@ import {
   ChevronRight,
   Download,
   Send,
-  Briefcase
+  Briefcase,
+  Facebook,
+  Layers,
+  AtSign,
+  Music,
+  Share2,
+  BookOpen
 } from "lucide-react";
 import { PROJECTS, EXPERIENCES, SOCIALS, CERTIFICATIONS, TECH_STACK } from "./constants";
 
@@ -49,6 +55,29 @@ const Navbar = () => (
     </div>
   </nav>
 );
+
+const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?: string }) => {
+  switch (name) {
+    case 'GitHub': return <Github className={className} />;
+    case 'LinkedIn': return <Linkedin className={className} />;
+    case 'YouTube': return <Youtube className={className} />;
+    case 'Instagram': return <Instagram className={className} />;
+    case 'Twitter': return <Twitter className={className} />;
+    case 'Facebook': return <Facebook className={className} />;
+    case 'Upwork': return <Briefcase className={className} />;
+    case 'Stack Overflow': return <Layers className={className} />;
+    case 'Telegram': return <Send className={className} />;
+    case 'Threads': return <AtSign className={className} />;
+    case 'TikTok': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.36-.54.38-.89.96-1.03 1.6-.08.4-.06.82.01 1.22.12.61.48 1.15.93 1.52.93.71 2.25.67 3.14-.07.4-.33.64-.78.75-1.27.1-.62.07-1.25.07-1.86.02-3.83.01-7.66.02-11.49z"/>
+      </svg>
+    );
+    case 'DEV Community': return <BookOpen className={className} />;
+    case 'Linktree': return <Share2 className={className} />;
+    default: return <Globe className={className} />;
+  }
+};
 
 const Hero = () => (
   <section id="home" className="pt-40 pb-20 px-6 relative overflow-hidden scroll-mt-20">
@@ -80,19 +109,16 @@ const Hero = () => (
           >
             Download CV <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
           </a>
-          <div className="flex items-center gap-3 px-4">
-            {SOCIALS.slice(0, 4).map((social) => (
+          <div className="flex flex-wrap items-center gap-3 px-4">
+            {SOCIALS.filter(s => ['GitHub', 'LinkedIn', 'Upwork', 'Stack Overflow', 'YouTube'].includes(s.name)).map((social) => (
               <a 
                 key={social.name}
                 href={social.url} 
                 target="_blank"
-                className="w-12 h-12 flex items-center justify-center rounded-xl border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/5 transition-all"
+                title={social.name}
+                className="w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/5 transition-all"
               >
-                {social.name === 'Github' && <Github className="w-5 h-5" />}
-                {social.name === 'Linkedin' && <Linkedin className="w-5 h-5" />}
-                {social.name === 'Upwork' && <Briefcase className="w-5 h-5" />}
-                {social.name === 'Youtube' && <Youtube className="w-5 h-5" />}
-                {social.name === 'Instagram' && <Instagram className="w-5 h-5" />}
+                <SocialIcon name={social.name} />
               </a>
             ))}
           </div>
@@ -341,7 +367,7 @@ const Projects = () => (
           </p>
         </div>
         <a href="https://github.com/gedionzewdu" target="_blank" className="flex items-center gap-2 text-cyan-400 font-medium hover:gap-3 transition-all">
-          View all on Github <ChevronRight className="w-4 h-4" />
+          View all on GitHub <ChevronRight className="w-4 h-4" />
         </a>
       </motion.div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -513,39 +539,80 @@ const Contact = () => {
   );
 };
 
-const Footer = () => (
-  <footer className="py-12 px-6 border-t border-white/5">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-      <a href="https://gedion.is-a.dev" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-        <img 
-          src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official%20Logo.png" 
-          alt="Gedion Dev Logo" 
-          className="w-8 h-8 object-contain rounded-full"
-          referrerPolicy="no-referrer"
-        />
-        <span className="font-mono font-bold tracking-tighter">Gedion Dev</span>
-      </a>
-      <div className="text-white/40 text-sm">
-        © {new Date().getFullYear()} Gedion Zewdu. All rights reserved.
+const Footer = () => {
+  const categories = [
+    {
+      title: "Professional",
+      links: ['GitHub', 'LinkedIn', 'Upwork', 'Stack Overflow', 'DEV Community']
+    },
+    {
+      title: "Social",
+      links: ['Twitter', 'Facebook', 'Threads', 'Instagram', 'TikTok']
+    },
+    {
+      title: "Community",
+      links: ['YouTube', 'Telegram', 'Linktree']
+    }
+  ];
+
+  return (
+    <footer className="py-16 px-6 border-t border-white/5 bg-white/[0.01]">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div className="space-y-6">
+            <a href="https://gedion.is-a.dev" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <img 
+                src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official%20Logo.png" 
+                alt="Gedion Dev Logo" 
+                className="w-10 h-10 object-contain rounded-full"
+                referrerPolicy="no-referrer"
+              />
+              <span className="font-mono font-bold text-xl tracking-tighter">Gedion Dev</span>
+            </a>
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs">
+              Building high-performance digital experiences with modern web and mobile technologies.
+            </p>
+          </div>
+
+          {categories.map((cat) => (
+            <div key={cat.title}>
+              <h4 className="text-xs font-mono font-bold text-white/20 uppercase tracking-widest mb-6">{cat.title}</h4>
+              <ul className="space-y-4">
+                {cat.links.map(linkName => {
+                  const social = SOCIALS.find(s => s.name === linkName);
+                  if (!social) return null;
+                  return (
+                    <li key={linkName}>
+                      <a 
+                        href={social.url} 
+                        target="_blank"
+                        className="flex items-center gap-3 text-white/60 hover:text-cyan-400 transition-colors group"
+                      >
+                        <SocialIcon name={social.name} className="w-4 h-4 text-white/20 group-hover:text-cyan-400 transition-colors" />
+                        <span className="text-sm font-medium">{social.name}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-white/20 text-xs font-mono uppercase tracking-wider">
+            © {new Date().getFullYear()} Gedion Zewdu. All rights reserved.
+          </div>
+          <div className="flex items-center gap-6">
+            <a href="#home" className="text-white/20 hover:text-white transition-colors text-xs uppercase tracking-widest font-bold">Home</a>
+            <a href="#about" className="text-white/20 hover:text-white transition-colors text-xs uppercase tracking-widest font-bold">About</a>
+            <a href="#experience" className="text-white/20 hover:text-white transition-colors text-xs uppercase tracking-widest font-bold">Experience</a>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center gap-6">
-        {SOCIALS.map((social) => (
-          <a 
-            key={social.name}
-            href={social.url} 
-            target="_blank"
-            className="text-white/40 hover:text-cyan-400 transition-colors"
-          >
-            {social.name === 'Github' && <Github className="w-4 h-4" />}
-            {social.name === 'Linkedin' && <Linkedin className="w-4 h-4" />}
-            {social.name === 'Twitter' && <Twitter className="w-4 h-4" />}
-            {social.name === 'Instagram' && <Instagram className="w-4 h-4" />}
-          </a>
-        ))}
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default function App() {
   return (
