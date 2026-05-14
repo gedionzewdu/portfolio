@@ -1,3 +1,8 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 export interface Project {
   title: string;
   category: string;
@@ -145,6 +150,6 @@ export const SOCIALS = [
   { name: 'Instagram', url: 'https://www.instagram.com/gedion.dev' },
   { name: 'TikTok', url: 'https://www.tiktok.com/@gediondev' },
   { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
-  { name: 'Twitter', url: 'https://www.x.com/gediondev' },
+  { name: 'X', url: 'https://www.x.com/gediondev' },
   { name: 'Linktree', url: 'https://linktr.ee/gediondev' }
 ];

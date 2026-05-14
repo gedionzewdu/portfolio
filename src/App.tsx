@@ -1,3 +1,8 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 import { useRef, useState, FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -7,7 +12,6 @@ import {
   Linkedin, 
   Youtube, 
   Instagram, 
-  Twitter, 
   Mail, 
   Phone, 
   MapPin, 
@@ -62,7 +66,11 @@ const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?:
     case 'LinkedIn': return <Linkedin className={className} />;
     case 'YouTube': return <Youtube className={className} />;
     case 'Instagram': return <Instagram className={className} />;
-    case 'Twitter': return <Twitter className={className} />;
+    case 'X': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+      </svg>
+    );
     case 'Facebook': return <Facebook className={className} />;
     case 'Upwork': return <Briefcase className={className} />;
     case 'Stack Overflow': return <Layers className={className} />;
@@ -547,7 +555,7 @@ const Footer = () => {
     },
     {
       title: "Social",
-      links: ['Twitter', 'Facebook', 'Threads', 'Instagram', 'TikTok']
+      links: ['X', 'Facebook', 'Threads', 'Instagram', 'TikTok']
     },
     {
       title: "Community",
