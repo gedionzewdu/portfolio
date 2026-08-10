@@ -151,6 +151,7 @@ export const SOCIALS = [
   { name: 'Hashnode', url: 'https://hashnode.com/@gediondev' },
   { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
   { name: 'Product Hunt', url: 'https://www.producthunt.com/@gediondev' },
+  { name: 'WhatsApp', url: 'https://whatsapp.com/channel/0029VbDXVEo9hXF2NblfIs0Y' },
   { name: 'Telegram', url: 'https://t.me/gedion_dev' },
   { name: 'Facebook', url: 'https://www.facebook.com/gediondev' },
   { name: 'Threads', url: 'https://www.threads.com/@gedion.dev' },
