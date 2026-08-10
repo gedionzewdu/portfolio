@@ -62,6 +62,7 @@ const Navbar = () => (
 
 const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?: string }) => {
   switch (name) {
+    case 'Website': return <Globe className={className} />;
     case 'GitHub': return <Github className={className} />;
     case 'LinkedIn': return <Linkedin className={className} />;
     case 'YouTube': return <Youtube className={className} />;
@@ -73,7 +74,27 @@ const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?:
     );
     case 'Facebook': return <Facebook className={className} />;
     case 'Upwork': return <Briefcase className={className} />;
+    case 'Fiverr': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M23 15.02h-2.12c-.38 0-.69.31-.69.69v1.2h2.81v-1.89zm-3.5-3.14h3.5v-1.89h-3.5v1.89zm3.5-3.14v-1.89h-3.5v1.89h3.5zm-3.5 12.56h3.5v-5.03h-3.5v5.03zM.89 21.3h3.5v-8.23H.89v8.23zm0-10.12h3.5V6.15H.89v5.03zm13.34 10.12h3.5V6.15h-3.5v15.15zM5.58 21.3h3.5v-8.23H5.58v8.23zm0-10.12h3.5V6.15H5.58v5.03zm3.89 10.12h3.5v-8.23H9.47v8.23zm0-10.12h3.5V6.15H9.47v5.03z"/>
+      </svg>
+    );
     case 'Stack Overflow': return <Layers className={className} />;
+    case 'Medium': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+      </svg>
+    );
+    case 'Hashnode': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.351 8.019l-8.37-8.019c-.588-.563-1.53-.563-2.118 0l-8.37 8.019c-.588.563-.588 1.464 0 2.027l8.37 8.019c.588.563 1.53.563 2.118 0l8.37-8.019c.588-.563.588-1.464 0-2.027zM12 15.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z"/>
+      </svg>
+    );
+    case 'Product Hunt': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.604 8.4h-3.405v3.6h3.405c.995 0 1.801-.806 1.801-1.8s-.806-1.8-1.801-1.8zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1.604 14.4h-3.405V18H7.799V6h5.805c2.318 0 4.201 1.883 4.201 4.2 0 2.318-1.883 4.2-4.201 4.2z"/>
+      </svg>
+    );
     case 'Telegram': return <Send className={className} />;
     case 'Threads': return <AtSign className={className} />;
     case 'TikTok': return (
@@ -551,15 +572,15 @@ const Footer = () => {
   const categories = [
     {
       title: "Professional",
-      links: ['GitHub', 'LinkedIn', 'Upwork', 'Stack Overflow', 'DEV Community']
+      links: ['GitHub', 'LinkedIn', 'Upwork', 'Fiverr', 'Stack Overflow', 'DEV Community']
     },
     {
       title: "Social",
-      links: ['X', 'Facebook', 'Threads', 'Instagram', 'TikTok']
+      links: ['X', 'Facebook', 'Threads', 'Instagram', 'TikTok', 'Telegram']
     },
     {
-      title: "Community",
-      links: ['YouTube', 'Telegram', 'Linktree']
+      title: "Community & Writing",
+      links: ['YouTube', 'Medium', 'Hashnode', 'Product Hunt', 'Linktree', 'Website']
     }
   ];
 

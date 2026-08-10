@@ -139,17 +139,22 @@ export const TECH_STACK = [
 ];
 
 export const SOCIALS = [
+  { name: 'Website', url: 'https://gedion.is-a.dev' },
   { name: 'GitHub', url: 'https://www.github.com/gedionzewdu' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/gedionzewdu' },
+  { name: 'Upwork', url: 'https://www.upwork.com/freelancers/~01727bf317f83e15ce' },
+  { name: 'Fiverr', url: 'https://www.fiverr.com/s/wkajmmw' },
   { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32652725/gedion-dev' },
-  { name: 'Upwork', url: 'https://www.upwork.com/freelancers/~01727bf317f83e15ce?mp_source=share' },
+  { name: 'X', url: 'https://www.x.com/gediondev' },
   { name: 'YouTube', url: 'https://www.youtube.com/@gedion_dev' },
+  { name: 'Medium', url: 'https://gediondev.medium.com' },
+  { name: 'Hashnode', url: 'https://hashnode.com/@gediondev' },
+  { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
+  { name: 'Product Hunt', url: 'https://www.producthunt.com/@gediondev' },
   { name: 'Telegram', url: 'https://t.me/gedion_dev' },
   { name: 'Facebook', url: 'https://www.facebook.com/gediondev' },
   { name: 'Threads', url: 'https://www.threads.com/@gedion.dev' },
   { name: 'Instagram', url: 'https://www.instagram.com/gedion.dev' },
   { name: 'TikTok', url: 'https://www.tiktok.com/@gediondev' },
-  { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
-  { name: 'X', url: 'https://www.x.com/gediondev' },
   { name: 'Linktree', url: 'https://linktr.ee/gediondev' }
 ];
