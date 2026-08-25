@@ -133,7 +133,7 @@ const Hero = () => (
           Building <span className="italic bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-fuchsia-500">Digital</span> Experiences.
         </h1>
         <p className="text-xl text-white/60 max-w-xl mb-10 leading-relaxed">
-          I'm Gedion Zewdu, a Full Stack Developer based in Addis Ababa. I specialize in building high-performance web and mobile applications using the MERN stack and native technologies.
+          I'm Gedion Zewdu, a Full Stack Developer based in Addis Ababa, Ethiopia. I specialize in building high-performance web and mobile applications using the MERN stack and native technologies.
         </p>
         <div className="flex flex-wrap gap-4">
           <a 
