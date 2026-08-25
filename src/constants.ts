@@ -143,6 +143,7 @@ export const SOCIALS = [
   { name: 'GitHub', url: 'https://www.github.com/gedionzewdu' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/gedionzewdu' },
   { name: 'Upwork', url: 'https://www.upwork.com/freelancers/~01727bf317f83e15ce' },
+  { name: 'Freelancer', url: 'https://www.freelancer.co.za/u/gedionzewdu' },
   { name: 'Fiverr', url: 'https://www.fiverr.com/s/wkajmmw' },
   { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32652725/gedion-dev' },
   { name: 'X', url: 'https://www.x.com/gediondev' },
@@ -156,6 +157,6 @@ export const SOCIALS = [
   { name: 'Facebook', url: 'https://www.facebook.com/gediondev' },
   { name: 'Threads', url: 'https://www.threads.com/@gedion.dev' },
   { name: 'Instagram', url: 'https://www.instagram.com/gedion.dev' },
-  { name: 'TikTok', url: 'https://www.tiktok.com/@gediondev' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@gedion_dev' },
   { name: 'Linktree', url: 'https://linktr.ee/gediondev' }
 ];

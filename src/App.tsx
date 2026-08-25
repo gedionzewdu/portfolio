@@ -74,6 +74,11 @@ const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?:
     );
     case 'Facebook': return <Facebook className={className} />;
     case 'Upwork': return <Briefcase className={className} />;
+    case 'Freelancer': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.07 0L9.467 6.421l4.687 2.279L14.07 0zM8.347 7.026L0 8.016l5.772 4.417 2.575-5.407zm6.758 2.378l-5.441-.122-4.04 8.473 9.481-8.351zm-9.98 9.387l-2.775 5.209L24 16.716 5.125 18.791z"/>
+      </svg>
+    );
     case 'Fiverr': return (
       <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
         <path d="M23 15.02h-2.12c-.38 0-.69.31-.69.69v1.2h2.81v-1.89zm-3.5-3.14h3.5v-1.89h-3.5v1.89zm3.5-3.14v-1.89h-3.5v1.89h3.5zm-3.5 12.56h3.5v-5.03h-3.5v5.03zM.89 21.3h3.5v-8.23H.89v8.23zm0-10.12h3.5V6.15H.89v5.03zm13.34 10.12h3.5V6.15h-3.5v15.15zM5.58 21.3h3.5v-8.23H5.58v8.23zm0-10.12h3.5V6.15H5.58v5.03zm3.89 10.12h3.5v-8.23H9.47v8.23zm0-10.12h3.5V6.15H9.47v5.03z"/>
@@ -577,7 +582,7 @@ const Footer = () => {
   const categories = [
     {
       title: "Professional",
-      links: ['GitHub', 'LinkedIn', 'Upwork', 'Fiverr', 'Stack Overflow', 'DEV Community']
+      links: ['GitHub', 'LinkedIn', 'Upwork', 'Freelancer', 'Fiverr', 'Stack Overflow', 'DEV Community']
     },
     {
       title: "Social",
@@ -585,7 +590,7 @@ const Footer = () => {
     },
     {
       title: "Community & Writing",
-      links: ['YouTube', 'Medium', 'Hashnode', 'Product Hunt', 'Linktree', 'Website']
+      links: ['Website', 'YouTube', 'Medium', 'Hashnode', 'Product Hunt', 'Linktree']
     }
   ];
 
