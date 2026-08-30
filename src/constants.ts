@@ -93,6 +93,16 @@ export const EXPERIENCES: Experience[] = [
     ]
   },
   {
+    role: "Mobile App Developer",
+    company: "EL Passion",
+    period: "May 2021 - January 2022",
+    description: [
+      "Led end-to-end iOS and Android development, translating user needs into seamless digital apps.",
+      "Collaborated with teams to build secure, high-speed interfaces and robust back-ends.",
+      "Optimized code and refined UI/UX, boosting user retention by 30% and cutting crashes."
+    ]
+  },
+  {
     role: "Full Stack Developer",
     company: "OAK'S LAB",
     period: "June 2020 - May 2021",
