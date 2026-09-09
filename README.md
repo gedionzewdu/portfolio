@@ -1,44 +1,20 @@
 <div align="center">
-  <img 
-    src="https://raw.githubusercontent.com/gedionzewdu/portfolio/main/branding/Gedion%20Dev%20Official.png"
-    alt="Gedion Dev Logo"
-    width="120"
-    height="120"
-    style="
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-    "
-  />
-
-  <h1>Gedion Zewdu</h1>
-  <p>Full Stack Developer & Mobile App Specialist</p>
-  
-  <a href="https://gedion.is-a.dev">
-    <img src="https://img.shields.io/badge/Live-Website-emerald?style=for-the-badge" alt="Live Website" />
-  </a>
-  <a href="https://github.com/gedionzewdu">
-    <img src="https://img.shields.io/badge/GitHub-Profile-lightgrey?style=for-the-badge&logo=github" alt="GitHub" />
-  </a>
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
----
+# Run and deploy your AI Studio app
 
-## 🚀 About This Project
-This is my professional portfolio and AI-integrated web platform. It showcases my work as a Full Stack Developer specializing in the MERN stack (MongoDB, Express, React, Node.js) and native mobile development (Swift, Kotlin, React Native).
+This contains everything you need to run your app locally.
 
-### Key Features:
-- **Responsive Portfolio:** Highlighting featured projects and professional experiences.
-- **AI Integration:** Seamlessly connected with Google Gemini via Cloudflare Pages and Workers.
-- **Contact System:** Integrated with EmailJS for direct inquiries at **contact@gedion.is-a.dev**.
+View your app in AI Studio: https://ai.studio/apps/31e16c04-ff99-45af-95f5-eebea7867a8f
 
-## 🛠️ Technical Stack
-- **Frontend:** React (TypeScript), Tailwind CSS, Framer Motion
-- **Backend/Infrastructure:** Cloudflare Pages, Node.js, Vercel
-- **Tools:** Lucide Icons, SweetAlert2, Git
+## Run Locally
 
-<div align="center">
-  <a href="https://gedion.is-a.dev">gedion.is-a.dev</a>
-  <br></br>
-  <p>Copyright © 2026 Gedion Zewdu</p>
-</div>
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
