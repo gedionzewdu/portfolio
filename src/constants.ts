@@ -159,6 +159,7 @@ export const SOCIALS = [
   { name: 'X', url: 'https://www.x.com/gediondev' },
   { name: 'YouTube', url: 'https://www.youtube.com/@gedion_dev' },
   { name: 'Medium', url: 'https://gediondev.medium.com' },
+  { name: 'Devpost', url: 'https://devpost.com/gediondev' },
   { name: 'Hashnode', url: 'https://hashnode.com/@gediondev' },
   { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
   { name: 'Product Hunt', url: 'https://www.producthunt.com/@gediondev' },

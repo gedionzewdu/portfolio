@@ -89,6 +89,11 @@ const SocialIcon = ({ name, className = "w-5 h-5" }: { name: string; className?:
         <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
       </svg>
     );
+    case 'Devpost': return (
+      <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.002 1.61L0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853Z"/>
+      </svg>
+    );
     case 'Hashnode': return (
       <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
         <path d="M22.351 8.019l-8.37-8.019c-.588-.563-1.53-.563-2.118 0l-8.37 8.019c-.588.563-.588 1.464 0 2.027l8.37 8.019c.588.563 1.53.563 2.118 0l8.37-8.019c.588-.563.588-1.464 0-2.027zM12 15.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z"/>
@@ -588,7 +593,7 @@ const Footer = () => {
     },
     {
       title: "Community & Writing",
-      links: ['Website', 'YouTube', 'Medium', 'Hashnode', 'Product Hunt', 'Linktree']
+      links: ['Website', 'YouTube', 'Medium', 'Devpost', 'Hashnode', 'Product Hunt', 'Linktree']
     }
   ];
 
