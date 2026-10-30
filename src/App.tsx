@@ -584,16 +584,16 @@ const Contact = () => {
 const Footer = () => {
   const categories = [
     {
-      title: "Professional",
-      links: ['GitHub', 'LinkedIn', 'Upwork', 'Freelancer', 'Fiverr', 'Stack Overflow', 'DEV Community']
+      title: "Professional & Portfolio",
+      links: ['Website', 'LinkedIn', 'GitHub', 'Upwork', 'Freelancer', 'Fiverr', 'Product Hunt']
     },
     {
-      title: "Social",
-      links: ['X', 'Facebook', 'Threads', 'Instagram', 'TikTok', 'Telegram', 'WhatsApp']
+      title: "Social & Media",
+      links: ['X', 'YouTube', 'Facebook', 'Instagram', 'TikTok', 'Telegram', 'WhatsApp']
     },
     {
-      title: "Community & Writing",
-      links: ['Website', 'YouTube', 'Medium', 'Devpost', 'Hashnode', 'Product Hunt', 'Linktree']
+      title: "Writing & Projects",
+      links: ['Medium', 'Threads', 'DEV Community', 'Hashnode', 'Stack Overflow', 'Devpost', 'Linktree']
     }
   ];
 

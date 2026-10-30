@@ -149,25 +149,30 @@ export const TECH_STACK = [
 ];
 
 export const SOCIALS = [
+  // Professional & Portfolio
   { name: 'Website', url: 'https://gedion.is-a.dev' },
-  { name: 'GitHub', url: 'https://www.github.com/gedionzewdu' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/gedionzewdu' },
+  { name: 'GitHub', url: 'https://www.github.com/gedionzewdu' },
   { name: 'Upwork', url: 'https://www.upwork.com/freelancers/~01727bf317f83e15ce' },
   { name: 'Freelancer', url: 'https://www.freelancer.co.za/u/gedionzewdu' },
   { name: 'Fiverr', url: 'https://www.fiverr.com/s/wkajmmw' },
-  { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32652725/gedion-dev' },
+  { name: 'Product Hunt', url: 'https://www.producthunt.com/@gediondev' },
+
+  // Social & Media
   { name: 'X', url: 'https://www.x.com/gediondev' },
   { name: 'YouTube', url: 'https://www.youtube.com/@gedion_dev' },
-  { name: 'Medium', url: 'https://gediondev.medium.com' },
-  { name: 'Devpost', url: 'https://devpost.com/gediondev' },
-  { name: 'Hashnode', url: 'https://hashnode.com/@gediondev' },
-  { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
-  { name: 'Product Hunt', url: 'https://www.producthunt.com/@gediondev' },
-  { name: 'WhatsApp', url: 'https://whatsapp.com/channel/0029VbDXVEo9hXF2NblfIs0Y' },
-  { name: 'Telegram', url: 'https://t.me/gedion_dev' },
   { name: 'Facebook', url: 'https://www.facebook.com/gediondev' },
-  { name: 'Threads', url: 'https://www.threads.com/@gedion.dev' },
   { name: 'Instagram', url: 'https://www.instagram.com/gedion.dev' },
   { name: 'TikTok', url: 'https://www.tiktok.com/@gedion_dev' },
+  { name: 'Telegram', url: 'https://t.me/gedion_dev' },
+  { name: 'WhatsApp', url: 'https://whatsapp.com/channel/0029VbDXVEo9hXF2NblfIs0Y' },
+
+  // Writing & Projects
+  { name: 'Medium', url: 'https://gediondev.medium.com' },
+  { name: 'Threads', url: 'https://www.threads.com/@gedion.dev' },
+  { name: 'DEV Community', url: 'https://dev.to/gedion_dev' },
+  { name: 'Hashnode', url: 'https://hashnode.com/@gediondev' },
+  { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32652725/gedion-dev' },
+  { name: 'Devpost', url: 'https://devpost.com/gediondev' },
   { name: 'Linktree', url: 'https://linktr.ee/gediondev' }
 ];
