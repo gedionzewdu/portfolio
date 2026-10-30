@@ -142,7 +142,7 @@ const Hero = () => (
           Building <span className="italic bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-fuchsia-500">Digital</span> Experiences.
         </h1>
         <p className="text-xl text-white/60 max-w-xl mb-10 leading-relaxed">
-          I'm Gedion Zewdu, a Full Stack Developer based in Addis Ababa, Ethiopia. I specialize in building high-performance web and mobile applications using the MERN stack and native technologies.
+          I'm Gedion Zewdu, a Full Stack Software Engineer based in Addis Ababa, Ethiopia. I specialize in building high-performance web and mobile applications using the MERN stack and native technologies.
         </p>
         <div className="flex flex-wrap gap-4">
           <a 
@@ -208,7 +208,7 @@ const About = () => (
         >
           <h2 className="text-4xl font-display font-bold mb-8">About Me</h2>
           <p className="text-xl text-white/60 leading-relaxed mb-8">
-            Senior Full Stack Developer specializing in MERN, AI integration, and LLM implementation to architect scalable web platforms and APIs. Complementing this expertise, I am a Specialist Mobile App Engineer expert in React Native, Swift, and Kotlin, utilizing Agile and CI/CD to deliver secure, high-performance solutions.
+            Senior Full Stack Software Engineer specializing in MERN, AI, and LLM implementation to architect scalable web platforms and APIs. Complementing this expertise, I am a Specialist Mobile App Developer expert in React Native, Swift, and Kotlin, utilizing Agile and CI/CD to deliver secure, high-performance solutions.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
